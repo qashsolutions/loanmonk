@@ -1,0 +1,210 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" width="1200" height="900">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0e27"/>
+      <stop offset="100%" stop-color="#131838"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="900" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="240" height="900" fill="#0d1130" rx="12"/>
+  <text x="32" y="44" fill="white" font-family="system-ui, sans-serif" font-size="18" font-weight="700">CreditMind</text>
+  <text x="32" y="62" fill="#6366f1" font-family="system-ui, sans-serif" font-size="10" letter-spacing="2">ADMIN PANEL</text>
+  <rect x="12" y="100" width="216" height="40" rx="10" fill="#6366f1" opacity="0.15"/>
+  <text x="52" y="126" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="14" font-weight="600">Sessions</text>
+
+  <!-- Breadcrumb -->
+  <text x="272" y="36" fill="#64748b" font-family="system-ui, sans-serif" font-size="12">Sessions</text>
+  <text x="330" y="36" fill="#475569" font-family="system-ui, sans-serif" font-size="12">/</text>
+  <text x="342" y="36" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="12">a3f8c1d2</text>
+
+  <!-- Title + status -->
+  <text x="272" y="70" fill="white" font-family="system-ui, sans-serif" font-size="22" font-weight="700">Session a3f8c1d2</text>
+  <rect x="500" y="52" width="80" height="26" rx="13" fill="#0a2e1a" stroke="#22c55e" stroke-width="1"/>
+  <text x="540" y="70" fill="#22c55e" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Approved</text>
+
+  <!-- Session meta card -->
+  <rect x="272" y="90" width="440" height="100" rx="14" fill="#1a1f3d" stroke="#2a2f52" stroke-width="1"/>
+  <g transform="translate(292, 115)">
+    <text x="0" y="0" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">User ID</text>
+    <text x="0" y="18" fill="white" font-family="monospace" font-size="13" font-weight="600">usr_7829</text>
+  </g>
+  <g transform="translate(412, 115)">
+    <text x="0" y="0" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">Started</text>
+    <text x="0" y="18" fill="white" font-family="system-ui, sans-serif" font-size="13">Feb 18, 10:23 AM</text>
+  </g>
+  <g transform="translate(562, 115)">
+    <text x="0" y="0" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">Duration</text>
+    <text x="0" y="18" fill="white" font-family="monospace" font-size="13" font-weight="600">4m 32s</text>
+  </g>
+  <g transform="translate(292, 155)">
+    <text x="0" y="0" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">Questions</text>
+    <text x="0" y="18" fill="white" font-family="monospace" font-size="13" font-weight="600">8</text>
+  </g>
+  <g transform="translate(412, 155)">
+    <text x="0" y="0" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">Industry</text>
+    <text x="0" y="18" fill="white" font-family="system-ui, sans-serif" font-size="13">Retail</text>
+  </g>
+
+  <!-- Override button -->
+  <rect x="732" y="90" width="440" height="100" rx="14" fill="#1a1f3d" stroke="#2a2f52" stroke-width="1"/>
+  <text x="752" y="118" fill="#64748b" font-family="system-ui, sans-serif" font-size="11" font-weight="600" letter-spacing="1">ADMIN ACTIONS</text>
+  <rect x="752" y="130" width="140" height="38" rx="10" fill="url(#accentGrad)"/>
+  <text x="822" y="155" fill="white" font-family="system-ui, sans-serif" font-size="13" font-weight="600" text-anchor="middle">Override Decision</text>
+  <rect x="908" y="130" width="120" height="38" rx="10" fill="#1a1f3d" stroke="#2a2f52" stroke-width="1"/>
+  <text x="968" y="155" fill="#818cf8" font-family="system-ui, sans-serif" font-size="13" font-weight="600" text-anchor="middle">Adjust Terms</text>
+
+  <!-- OCEAN Chart (Phase 1) -->
+  <rect x="272" y="210" width="440" height="280" rx="14" fill="#1a1f3d" stroke="#2a2f52" stroke-width="1"/>
+  <text x="292" y="240" fill="white" font-family="system-ui, sans-serif" font-size="15" font-weight="700">OCEAN Traits — Phase 1</text>
+  <text x="292" y="258" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">Self-report scores (normalized 0-1)</text>
+
+  <!-- O bar -->
+  <text x="292" y="290" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">O  Openness</text>
+  <rect x="410" y="278" width="260" height="16" rx="8" fill="#1e2248"/>
+  <rect x="410" y="278" width="182" height="16" rx="8" fill="#a78bfa"/>
+  <text x="680" y="291" fill="#a78bfa" font-family="monospace" font-size="11" font-weight="700">0.70</text>
+
+  <!-- C bar -->
+  <text x="292" y="320" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">C  Conscientiousness</text>
+  <rect x="410" y="308" width="260" height="16" rx="8" fill="#1e2248"/>
+  <rect x="410" y="308" width="234" height="16" rx="8" fill="#6366f1"/>
+  <text x="680" y="321" fill="#6366f1" font-family="monospace" font-size="11" font-weight="700">0.90</text>
+
+  <!-- E bar -->
+  <text x="292" y="350" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">E  Extraversion</text>
+  <rect x="410" y="338" width="260" height="16" rx="8" fill="#1e2248"/>
+  <rect x="410" y="338" width="156" height="16" rx="8" fill="#818cf8"/>
+  <text x="680" y="351" fill="#818cf8" font-family="monospace" font-size="11" font-weight="700">0.60</text>
+
+  <!-- A bar -->
+  <text x="292" y="380" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">A  Agreeableness</text>
+  <rect x="410" y="368" width="260" height="16" rx="8" fill="#1e2248"/>
+  <rect x="410" y="368" width="208" height="16" rx="8" fill="#22c55e"/>
+  <text x="680" y="381" fill="#22c55e" font-family="monospace" font-size="11" font-weight="700">0.80</text>
+
+  <!-- N bar -->
+  <text x="292" y="410" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">N  Neuroticism</text>
+  <rect x="410" y="398" width="260" height="16" rx="8" fill="#1e2248"/>
+  <rect x="410" y="398" width="78" height="16" rx="8" fill="#22c55e"/>
+  <text x="680" y="411" fill="#22c55e" font-family="monospace" font-size="11" font-weight="700">0.30</text>
+
+  <!-- Trait variance -->
+  <text x="292" y="450" fill="#334155" font-family="system-ui, sans-serif" font-size="11">Avg variance: 0.14 (converged)</text>
+  <rect x="450" y="438" width="60" height="20" rx="10" fill="#0a2e1a"/>
+  <text x="480" y="452" fill="#22c55e" font-family="system-ui, sans-serif" font-size="10" font-weight="600" text-anchor="middle">GOOD</text>
+
+  <!-- OCEAN Chart (Phase 2) -->
+  <rect x="732" y="210" width="440" height="280" rx="14" fill="#1a1f3d" stroke="#2a2f52" stroke-width="1"/>
+  <text x="752" y="240" fill="white" font-family="system-ui, sans-serif" font-size="15" font-weight="700">OCEAN Traits — Phase 2</text>
+  <text x="752" y="258" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">Behavioral scores from Supply Run</text>
+
+  <!-- O bar -->
+  <text x="752" y="290" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">O  Openness</text>
+  <rect x="870" y="278" width="260" height="16" rx="8" fill="#1e2248"/>
+  <rect x="870" y="278" width="195" height="16" rx="8" fill="#a78bfa"/>
+  <text x="1140" y="291" fill="#a78bfa" font-family="monospace" font-size="11" font-weight="700">0.75</text>
+
+  <!-- C bar -->
+  <text x="752" y="320" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">C  Conscientiousness</text>
+  <rect x="870" y="308" width="260" height="16" rx="8" fill="#1e2248"/>
+  <rect x="870" y="308" width="221" height="16" rx="8" fill="#6366f1"/>
+  <text x="1140" y="321" fill="#6366f1" font-family="monospace" font-size="11" font-weight="700">0.85</text>
+
+  <!-- E bar -->
+  <text x="752" y="350" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">E  Extraversion</text>
+  <rect x="870" y="338" width="260" height="16" rx="8" fill="#1e2248"/>
+  <rect x="870" y="338" width="143" height="16" rx="8" fill="#818cf8"/>
+  <text x="1140" y="351" fill="#818cf8" font-family="monospace" font-size="11" font-weight="700">0.55</text>
+
+  <!-- A bar -->
+  <text x="752" y="380" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">A  Agreeableness</text>
+  <rect x="870" y="368" width="260" height="16" rx="8" fill="#1e2248"/>
+  <rect x="870" y="368" width="195" height="16" rx="8" fill="#22c55e"/>
+  <text x="1140" y="381" fill="#22c55e" font-family="monospace" font-size="11" font-weight="700">0.75</text>
+
+  <!-- N bar -->
+  <text x="752" y="410" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">N  Neuroticism</text>
+  <rect x="870" y="398" width="260" height="16" rx="8" fill="#1e2248"/>
+  <rect x="870" y="398" width="91" height="16" rx="8" fill="#f59e0b"/>
+  <text x="1140" y="411" fill="#f59e0b" font-family="monospace" font-size="11" font-weight="700">0.35</text>
+
+  <!-- Consistency -->
+  <text x="752" y="450" fill="#334155" font-family="system-ui, sans-serif" font-size="11">Consistency index: 0.12</text>
+  <rect x="890" y="438" width="100" height="20" rx="10" fill="#0a2e1a"/>
+  <text x="940" y="452" fill="#22c55e" font-family="system-ui, sans-serif" font-size="10" font-weight="600" text-anchor="middle">HIGHLY CONSISTENT</text>
+
+  <!-- PD Score Breakdown -->
+  <rect x="272" y="510" width="440" height="200" rx="14" fill="#1a1f3d" stroke="#2a2f52" stroke-width="1"/>
+  <text x="292" y="540" fill="white" font-family="system-ui, sans-serif" font-size="15" font-weight="700">PD Score Breakdown</text>
+
+  <!-- PD metrics -->
+  <g transform="translate(292, 565)">
+    <text x="0" y="0" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">Phase 1 Only</text>
+    <text x="0" y="22" fill="white" font-family="monospace" font-size="20" font-weight="700">6.1%</text>
+  </g>
+  <g transform="translate(412, 565)">
+    <text x="0" y="0" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">Blended (P1+P2)</text>
+    <text x="0" y="22" fill="white" font-family="monospace" font-size="20" font-weight="700">5.8%</text>
+  </g>
+  <g transform="translate(562, 565)">
+    <text x="0" y="0" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">Profile Modified</text>
+    <text x="0" y="22" fill="#22c55e" font-family="monospace" font-size="20" font-weight="700">5.2%</text>
+    <text x="100" y="22" fill="#22c55e" font-family="system-ui, sans-serif" font-size="12">(-3.0%)</text>
+  </g>
+
+  <!-- PD formula visualization -->
+  <rect x="292" y="615" width="400" height="32" rx="4" fill="#131838"/>
+  <text x="302" y="636" fill="#64748b" font-family="monospace" font-size="10">PD = 0.35×C(0.88) + 0.25×N(0.32) + 0.18×A(0.78) + 0.12×O(0.72) + 0.10×E(0.58)</text>
+
+  <!-- Risk gauge -->
+  <g transform="translate(292, 660)">
+    <rect x="0" y="0" width="400" height="8" rx="4" fill="#1e2248"/>
+    <rect x="0" y="0" width="60" height="8" rx="4" fill="#22c55e"/>
+    <!-- Marker -->
+    <line x1="60" y1="-4" x2="60" y2="12" stroke="#22c55e" stroke-width="2"/>
+    <!-- Labels -->
+    <text x="0" y="24" fill="#22c55e" font-family="system-ui, sans-serif" font-size="9">0%</text>
+    <text x="92" y="24" fill="#22c55e" font-family="system-ui, sans-serif" font-size="9" font-weight="600">8%</text>
+    <text x="200" y="24" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="9">18%</text>
+    <text x="380" y="24" fill="#ef4444" font-family="system-ui, sans-serif" font-size="9" text-anchor="end">35%</text>
+  </g>
+
+  <!-- Money Profile + Loan card -->
+  <rect x="732" y="510" width="440" height="200" rx="14" fill="#1a1f3d" stroke="#2a2f52" stroke-width="1"/>
+  <text x="752" y="540" fill="white" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Loan Recommendation</text>
+
+  <!-- Profile -->
+  <rect x="752" y="555" width="180" height="36" rx="10" fill="#312e81"/>
+  <text x="842" y="578" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="13" font-weight="600" text-anchor="middle">Prudent Planner</text>
+  <text x="948" y="578" fill="#22c55e" font-family="system-ui, sans-serif" font-size="12">-3.0% modifier</text>
+
+  <!-- Loan details grid -->
+  <g transform="translate(752, 610)">
+    <text x="0" y="0" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">Max Amount</text>
+    <text x="0" y="20" fill="#22c55e" font-family="monospace" font-size="24" font-weight="700">$50,000</text>
+  </g>
+  <g transform="translate(912, 610)">
+    <text x="0" y="0" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">Duration</text>
+    <text x="0" y="20" fill="white" font-family="monospace" font-size="24" font-weight="700">36 mo</text>
+  </g>
+  <g transform="translate(1052, 610)">
+    <text x="0" y="0" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">APR</text>
+    <text x="0" y="20" fill="white" font-family="monospace" font-size="24" font-weight="700">8.5%</text>
+  </g>
+
+  <!-- Risk badge -->
+  <rect x="752" y="660" width="80" height="28" rx="14" fill="#0a2e1a" stroke="#22c55e" stroke-width="1"/>
+  <text x="792" y="679" fill="#22c55e" font-family="system-ui, sans-serif" font-size="12" font-weight="700" text-anchor="middle">LOW RISK</text>
+
+  <!-- Bottom status -->
+  <rect x="272" y="730" width="900" height="44" rx="12" fill="#0a2e1a" stroke="#22c55e" stroke-width="1" opacity="0.5"/>
+  <text x="292" y="757" fill="#22c55e" font-family="system-ui, sans-serif" font-size="13">Auto-approved — PD 5.2% is below 8% threshold with high consistency (0.12)</text>
+</svg>

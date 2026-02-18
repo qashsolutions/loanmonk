@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 760" width="440" height="760">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0e27"/>
+      <stop offset="100%" stop-color="#131838"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+    <linearGradient id="optionA" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#312e81"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="440" height="760" fill="url(#bgGrad)" rx="20"/>
+
+  <!-- Header -->
+  <rect x="0" y="0" width="440" height="80" fill="rgba(0,0,0,0.3)" rx="20"/>
+  <text x="24" y="35" fill="white" font-family="system-ui, sans-serif" font-size="18" font-weight="700">CreditMind</text>
+  <text x="360" y="35" fill="#f59e0b" font-family="monospace" font-size="14">00:48</text>
+  <rect x="24" y="54" width="392" height="6" rx="3" fill="#1e2248"/>
+  <rect x="24" y="54" width="343" height="6" rx="3" fill="url(#accentGrad)"/>
+  <text x="416" y="50" fill="#64748b" font-family="monospace" font-size="11" text-anchor="end">7/8</text>
+
+  <!-- Trait label -->
+  <rect x="24" y="100" width="80" height="28" rx="14" fill="#2e1a1e"/>
+  <text x="64" y="119" fill="#f87171" font-family="system-ui, sans-serif" font-size="12" font-weight="600" text-anchor="middle">Openness</text>
+
+  <!-- Question -->
+  <text x="24" y="164" fill="white" font-family="system-ui, sans-serif" font-size="18" font-weight="600">
+    <tspan x="24" dy="0">You must choose between two</tspan>
+    <tspan x="24" dy="26">business strategies:</tspan>
+  </text>
+
+  <!-- VS badge -->
+  <circle cx="220" cy="410" r="24" fill="#1e2248" stroke="#6366f1" stroke-width="2"/>
+  <text x="220" y="416" fill="#818cf8" font-family="system-ui, sans-serif" font-size="14" font-weight="800" text-anchor="middle">VS</text>
+
+  <!-- Option A - Selected -->
+  <rect x="24" y="240" width="392" height="140" rx="20" fill="url(#optionA)" stroke="#6366f1" stroke-width="2"/>
+  <circle cx="50" cy="268" r="16" fill="#6366f1"/>
+  <text x="50" y="273" fill="white" font-family="system-ui, sans-serif" font-size="14" font-weight="800" text-anchor="middle">A</text>
+  <text x="76" y="273" fill="white" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Innovate Boldly</text>
+  <text x="50" y="306" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">
+    <tspan x="50" dy="0">Invest 60% of profits into a brand-new,</tspan>
+    <tspan x="50" dy="20">untested product line. High potential</tspan>
+    <tspan x="50" dy="20">reward, but risky if the market shifts.</tspan>
+  </text>
+  <!-- Checkmark -->
+  <circle cx="386" cy="268" r="14" fill="#6366f1"/>
+  <path d="M379,268 L384,273 L393,263" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
+
+  <!-- Option B -->
+  <rect x="24" y="450" width="392" height="140" rx="20" fill="#1a1f3d" stroke="#2a2f52" stroke-width="1"/>
+  <circle cx="50" cy="478" r="16" fill="#2a2f52"/>
+  <text x="50" y="483" fill="#64748b" font-family="system-ui, sans-serif" font-size="14" font-weight="800" text-anchor="middle">B</text>
+  <text x="76" y="483" fill="white" font-family="system-ui, sans-serif" font-size="15" font-weight="700">Optimize Existing</text>
+  <text x="50" y="516" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="13">
+    <tspan x="50" dy="0">Reinvest profits into improving your</tspan>
+    <tspan x="50" dy="20">current best-selling product. Steady,</tspan>
+    <tspan x="50" dy="20">reliable growth with lower risk.</tspan>
+  </text>
+
+  <!-- Next button -->
+  <rect x="24" y="640" width="392" height="56" rx="16" fill="url(#accentGrad)"/>
+  <text x="220" y="674" fill="white" font-family="system-ui, sans-serif" font-size="16" font-weight="700" text-anchor="middle">Continue</text>
+
+  <!-- Tip -->
+  <text x="220" y="730" fill="#475569" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">Neither option is wrong - choose what feels right</text>
+</svg>
