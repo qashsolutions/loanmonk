@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CreditMind — Mock Screens Demo</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #050816;
+      color: #e2e8f0;
+      min-height: 100vh;
+    }
+    header {
+      background: #0a0e27;
+      border-bottom: 1px solid #1e2248;
+      padding: 24px 40px;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    header h1 {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 1px;
+    }
+    header h1 span { color: #6366f1; }
+    header p { color: #64748b; font-size: 14px; margin-top: 4px; }
+    nav {
+      display: flex;
+      gap: 8px;
+      margin-top: 16px;
+      flex-wrap: wrap;
+    }
+    nav button {
+      padding: 8px 16px;
+      border-radius: 20px;
+      border: 1px solid #2a2f52;
+      background: #1a1f3d;
+      color: #94a3b8;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    nav button:hover { border-color: #6366f1; color: #a5b4fc; }
+    nav button.active {
+      background: #6366f1;
+      border-color: #6366f1;
+      color: white;
+      font-weight: 600;
+    }
+    main { padding: 40px; }
+    .section {
+      margin-bottom: 60px;
+      display: none;
+    }
+    .section.visible { display: block; }
+    .section h2 {
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 8px;
+      color: #c7d2fe;
+    }
+    .section p.desc {
+      color: #64748b;
+      font-size: 13px;
+      margin-bottom: 24px;
+    }
+    .screens {
+      display: flex;
+      gap: 32px;
+      flex-wrap: wrap;
+      align-items: flex-start;
+    }
+    .screen-card {
+      background: #0a0e27;
+      border: 1px solid #1e2248;
+      border-radius: 16px;
+      overflow: hidden;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .screen-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 32px rgba(99, 102, 241, 0.15);
+    }
+    .screen-card img {
+      display: block;
+    }
+    .screen-card.mobile img {
+      width: 320px;
+      height: auto;
+    }
+    .screen-card.desktop img {
+      width: 900px;
+      height: auto;
+    }
+    .screen-card .label {
+      padding: 12px 16px;
+      background: #131838;
+      border-top: 1px solid #1e2248;
+    }
+    .screen-card .label h3 {
+      font-size: 14px;
+      font-weight: 600;
+      color: #e2e8f0;
+    }
+    .screen-card .label p {
+      font-size: 11px;
+      color: #64748b;
+      margin-top: 2px;
+    }
+    footer {
+      text-align: center;
+      padding: 40px;
+      color: #334155;
+      font-size: 12px;
+      border-top: 1px solid #1e2248;
+    }
+    @media (max-width: 768px) {
+      main { padding: 16px; }
+      .screen-card.mobile img { width: 100%; }
+      .screen-card.desktop img { width: 100%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1><span>CreditMind</span> — Mock Screens</h1>
+    <p>Interactive SVG mockups of the gamified psychometric credit assessment platform</p>
+    <nav>
+      <button class="active" onclick="showSection('all')">All Screens</button>
+      <button onclick="showSection('game')">Game Flow</button>
+      <button onclick="showSection('phase1')">Phase 1 — Questions</button>
+      <button onclick="showSection('phase2')">Phase 2 — Supply Run</button>
+      <button onclick="showSection('results')">Results</button>
+      <button onclick="showSection('admin')">Admin Dashboard</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Boot -->
+    <div class="section visible" data-tags="all game">
+      <h2>1. Boot / Loading Screen</h2>
+      <p class="desc">Initial loading screen shown when the user opens the assessment. Creates session via POST /api/game/start.</p>
+      <div class="screens">
+        <div class="screen-card mobile">
+          <img src="01-boot-screen.svg" alt="Boot Screen">
+          <div class="label">
+            <h3>Boot Screen</h3>
+            <p>BootScene.ts — Session initialization</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phase 1 Grid -->
+    <div class="section visible" data-tags="all game phase1">
+      <h2>2. Phase 1 — Grid Question (2x2 Scenarios)</h2>
+      <p class="desc">Tap-to-select from 4 scenario cards. Maps to a single OCEAN trait. AI-generated via Claude API.</p>
+      <div class="screens">
+        <div class="screen-card mobile">
+          <img src="02-phase1-grid.svg" alt="Grid Question">
+          <div class="label">
+            <h3>Grid Question</h3>
+            <p>GridQuestion.ts — Conscientiousness measurement</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phase 1 Bars -->
+    <div class="section visible" data-tags="all game phase1">
+      <h2>3. Phase 1 — Bars Question (Spectrum)</h2>
+      <p class="desc">5-level spectrum response. Heights visually encode intensity. Measures trait on 1-5 Likert scale.</p>
+      <div class="screens">
+        <div class="screen-card mobile">
+          <img src="03-phase1-bars.svg" alt="Bars Question">
+          <div class="label">
+            <h3>Bars Question</h3>
+            <p>BarsQuestion.ts — Neuroticism measurement</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phase 1 Budget -->
+    <div class="section visible" data-tags="all game phase1">
+      <h2>4. Phase 1 — Budget Allocation</h2>
+      <p class="desc">Drag sliders to allocate percentages across categories. Reveals resource prioritization behavior.</p>
+      <div class="screens">
+        <div class="screen-card mobile">
+          <img src="04-phase1-budget.svg" alt="Budget Question">
+          <div class="label">
+            <h3>Budget Allocation</h3>
+            <p>BudgetQuestion.ts — Agreeableness measurement</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phase 1 Tradeoff -->
+    <div class="section visible" data-tags="all game phase1">
+      <h2>5. Phase 1 — Tradeoff Choice</h2>
+      <p class="desc">Binary choice between two nuanced business strategies. Neither option is clearly "right."</p>
+      <div class="screens">
+        <div class="screen-card mobile">
+          <img src="05-phase1-tradeoff.svg" alt="Tradeoff Question">
+          <div class="label">
+            <h3>Tradeoff Choice</h3>
+            <p>TradeoffQuestion.ts — Openness measurement</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Phase 2 -->
+    <div class="section visible" data-tags="all game phase2">
+      <h2>6. Phase 2 — Supply Run (Behavioral Mini-Game)</h2>
+      <p class="desc">60-second isometric game capturing behavioral signals: tap velocity, path efficiency, risk-taking, sharing decisions, and more.</p>
+      <div class="screens">
+        <div class="screen-card mobile">
+          <img src="06-phase2-supply-run.svg" alt="Supply Run Game">
+          <div class="label">
+            <h3>Supply Run</h3>
+            <p>SupplyRunScene.ts — Real-time behavioral OCEAN capture</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Results -->
+    <div class="section visible" data-tags="all game results">
+      <h2>7. Results — Approved</h2>
+      <p class="desc">Auto-approved: PD &lt; 8% with high consistency. Shows money profile, loan terms, and risk rating.</p>
+      <div class="screens">
+        <div class="screen-card mobile">
+          <img src="07-result-approved.svg" alt="Approved Result">
+          <div class="label">
+            <h3>Approved — Low Risk</h3>
+            <p>ResultScene.ts — Prudent Planner, PD 5.2%</p>
+          </div>
+        </div>
+        <div class="screen-card mobile">
+          <img src="08-result-pending.svg" alt="Pending Result">
+          <div class="label">
+            <h3>Pending Review — Moderate Risk</h3>
+            <p>ResultScene.ts — Social Spender, PD 12.8%</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Admin Login -->
+    <div class="section visible" data-tags="all admin">
+      <h2>8. Admin — Login</h2>
+      <p class="desc">Secure admin login. Role-based access: reviewer, manager, superadmin.</p>
+      <div class="screens">
+        <div class="screen-card desktop">
+          <img src="09-admin-login.svg" alt="Admin Login">
+          <div class="label">
+            <h3>Admin Login</h3>
+            <p>LoginPage.tsx — Authentication</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Admin Sessions -->
+    <div class="section visible" data-tags="all admin">
+      <h2>9. Admin — Session List</h2>
+      <p class="desc">All assessment sessions with PD scores, risk ratings, decisions, and consistency flags. Sortable and filterable.</p>
+      <div class="screens">
+        <div class="screen-card desktop">
+          <img src="10-admin-sessions.svg" alt="Admin Sessions">
+          <div class="label">
+            <h3>Session List</h3>
+            <p>SessionListPage.tsx — 1,247 sessions</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Admin Detail -->
+    <div class="section visible" data-tags="all admin">
+      <h2>10. Admin — Session Detail</h2>
+      <p class="desc">Deep dive into a single assessment: Phase 1 + Phase 2 OCEAN charts, PD breakdown, consistency index, loan recommendation, and admin override.</p>
+      <div class="screens">
+        <div class="screen-card desktop">
+          <img src="11-admin-session-detail.svg" alt="Admin Session Detail">
+          <div class="label">
+            <h3>Session Detail — a3f8c1d2</h3>
+            <p>SessionDetailPage.tsx — Full assessment review</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    CreditMind Mock Screens — Built for demo purposes. Not production UI.
+  </footer>
+
+  <script>
+    function showSection(tag) {
+      // Update nav
+      document.querySelectorAll('nav button').forEach(btn => btn.classList.remove('active'));
+      event.target.classList.add('active');
+
+      // Show/hide sections
+      document.querySelectorAll('.section').forEach(section => {
+        const tags = section.dataset.tags || '';
+        if (tag === 'all' || tags.includes(tag)) {
+          section.classList.add('visible');
+        } else {
+          section.classList.remove('visible');
+        }
+      });
+    }
+  </script>
+</body>
+</html>

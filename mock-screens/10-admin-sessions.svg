@@ -1,0 +1,160 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 800" width="1200" height="800">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0e27"/>
+      <stop offset="100%" stop-color="#131838"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#bgGrad)" rx="12"/>
+
+  <!-- Sidebar -->
+  <rect x="0" y="0" width="240" height="800" fill="#0d1130" rx="12"/>
+  <text x="32" y="44" fill="white" font-family="system-ui, sans-serif" font-size="18" font-weight="700">CreditMind</text>
+  <text x="32" y="62" fill="#6366f1" font-family="system-ui, sans-serif" font-size="10" letter-spacing="2">ADMIN PANEL</text>
+
+  <!-- Nav items -->
+  <rect x="12" y="100" width="216" height="40" rx="10" fill="#6366f1" opacity="0.15"/>
+  <text x="52" y="126" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="14" font-weight="600">Sessions</text>
+  <rect x="20" y="112" width="18" height="2" rx="1" fill="#6366f1"/>
+  <rect x="20" y="118" width="14" height="2" rx="1" fill="#6366f1"/>
+  <rect x="20" y="124" width="18" height="2" rx="1" fill="#6366f1"/>
+
+  <text x="52" y="170" fill="#64748b" font-family="system-ui, sans-serif" font-size="14">Analytics</text>
+  <text x="52" y="210" fill="#64748b" font-family="system-ui, sans-serif" font-size="14">Settings</text>
+
+  <!-- User info at bottom -->
+  <rect x="12" y="740" width="216" height="48" rx="10" fill="#1a1f3d"/>
+  <circle cx="40" cy="764" r="16" fill="#312e81"/>
+  <text x="40" y="769" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="12" font-weight="700" text-anchor="middle">AK</text>
+  <text x="66" y="758" fill="white" font-family="system-ui, sans-serif" font-size="12" font-weight="600">Admin</text>
+  <text x="66" y="774" fill="#64748b" font-family="system-ui, sans-serif" font-size="11">Superadmin</text>
+
+  <!-- Main content -->
+  <!-- Header -->
+  <text x="272" y="44" fill="white" font-family="system-ui, sans-serif" font-size="22" font-weight="700">Assessment Sessions</text>
+  <text x="272" y="66" fill="#64748b" font-family="system-ui, sans-serif" font-size="13">Review and manage psychometric assessments</text>
+
+  <!-- Stats cards row -->
+  <rect x="272" y="90" width="210" height="80" rx="14" fill="#1a1f3d" stroke="#2a2f52" stroke-width="1"/>
+  <text x="292" y="118" fill="#64748b" font-family="system-ui, sans-serif" font-size="11" font-weight="600">TOTAL SESSIONS</text>
+  <text x="292" y="148" fill="white" font-family="monospace" font-size="28" font-weight="700">1,247</text>
+
+  <rect x="502" y="90" width="210" height="80" rx="14" fill="#1a1f3d" stroke="#2a2f52" stroke-width="1"/>
+  <text x="522" y="118" fill="#64748b" font-family="system-ui, sans-serif" font-size="11" font-weight="600">APPROVED</text>
+  <text x="522" y="148" fill="#22c55e" font-family="monospace" font-size="28" font-weight="700">842</text>
+  <text x="600" y="148" fill="#22c55e" font-family="system-ui, sans-serif" font-size="13">67.5%</text>
+
+  <rect x="732" y="90" width="210" height="80" rx="14" fill="#1a1f3d" stroke="#2a2f52" stroke-width="1"/>
+  <text x="752" y="118" fill="#64748b" font-family="system-ui, sans-serif" font-size="11" font-weight="600">PENDING REVIEW</text>
+  <text x="752" y="148" fill="#f59e0b" font-family="monospace" font-size="28" font-weight="700">89</text>
+
+  <rect x="962" y="90" width="210" height="80" rx="14" fill="#1a1f3d" stroke="#2a2f52" stroke-width="1"/>
+  <text x="982" y="118" fill="#64748b" font-family="system-ui, sans-serif" font-size="11" font-weight="600">AVG PD SCORE</text>
+  <text x="982" y="148" fill="#818cf8" font-family="monospace" font-size="28" font-weight="700">11.3%</text>
+
+  <!-- Filter bar -->
+  <rect x="272" y="190" width="900" height="44" rx="12" fill="#1a1f3d" stroke="#2a2f52" stroke-width="1"/>
+  <text x="292" y="217" fill="#475569" font-family="system-ui, sans-serif" font-size="13">Search sessions...</text>
+  <rect x="880" y="200" width="80" height="26" rx="8" fill="#312e81"/>
+  <text x="920" y="218" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">All Status</text>
+  <rect x="972" y="200" width="80" height="26" rx="8" fill="#312e81"/>
+  <text x="1012" y="218" fill="#a5b4fc" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">All Risk</text>
+  <rect x="1064" y="200" width="80" height="26" rx="8" fill="url(#accentGrad)"/>
+  <text x="1104" y="218" fill="white" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Export</text>
+
+  <!-- Table -->
+  <rect x="272" y="250" width="900" height="40" rx="0" fill="#131838"/>
+  <text x="292" y="275" fill="#64748b" font-family="system-ui, sans-serif" font-size="11" font-weight="700">SESSION ID</text>
+  <text x="440" y="275" fill="#64748b" font-family="system-ui, sans-serif" font-size="11" font-weight="700">USER ID</text>
+  <text x="570" y="275" fill="#64748b" font-family="system-ui, sans-serif" font-size="11" font-weight="700">STARTED</text>
+  <text x="700" y="275" fill="#64748b" font-family="system-ui, sans-serif" font-size="11" font-weight="700">DURATION</text>
+  <text x="800" y="275" fill="#64748b" font-family="system-ui, sans-serif" font-size="11" font-weight="700">PD BLENDED</text>
+  <text x="920" y="275" fill="#64748b" font-family="system-ui, sans-serif" font-size="11" font-weight="700">RISK</text>
+  <text x="1020" y="275" fill="#64748b" font-family="system-ui, sans-serif" font-size="11" font-weight="700">DECISION</text>
+  <text x="1130" y="275" fill="#64748b" font-family="system-ui, sans-serif" font-size="11" font-weight="700">FLAG</text>
+
+  <!-- Row 1 -->
+  <rect x="272" y="290" width="900" height="48" fill="#0a0e27" opacity="0.5"/>
+  <text x="292" y="320" fill="#a5b4fc" font-family="monospace" font-size="12">a3f8c1d2</text>
+  <text x="440" y="320" fill="#94a3b8" font-family="monospace" font-size="12">usr_7829</text>
+  <text x="570" y="320" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Feb 18, 10:23</text>
+  <text x="700" y="320" fill="#94a3b8" font-family="monospace" font-size="12">4m 32s</text>
+  <text x="800" y="320" fill="#22c55e" font-family="monospace" font-size="12" font-weight="700">5.2%</text>
+  <rect x="920" y="306" width="60" height="22" rx="11" fill="#0a2e1a"/>
+  <text x="950" y="322" fill="#22c55e" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Low</text>
+  <rect x="1020" y="306" width="80" height="22" rx="11" fill="#0a2e1a"/>
+  <text x="1060" y="322" fill="#22c55e" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Approved</text>
+  <text x="1150" y="320" fill="#334155" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">-</text>
+
+  <!-- Row 2 -->
+  <rect x="272" y="338" width="900" height="48" fill="transparent"/>
+  <text x="292" y="368" fill="#a5b4fc" font-family="monospace" font-size="12">b7e2f9a1</text>
+  <text x="440" y="368" fill="#94a3b8" font-family="monospace" font-size="12">usr_4451</text>
+  <text x="570" y="368" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Feb 18, 09:55</text>
+  <text x="700" y="368" fill="#94a3b8" font-family="monospace" font-size="12">6m 18s</text>
+  <text x="800" y="368" fill="#f59e0b" font-family="monospace" font-size="12" font-weight="700">12.8%</text>
+  <rect x="920" y="354" width="80" height="22" rx="11" fill="#2e2a0a"/>
+  <text x="960" y="370" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Moderate</text>
+  <rect x="1020" y="354" width="80" height="22" rx="11" fill="#2e2a0a"/>
+  <text x="1060" y="370" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Pending</text>
+  <text x="1150" y="368" fill="#334155" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">-</text>
+
+  <!-- Row 3 (flagged) -->
+  <rect x="272" y="386" width="900" height="48" fill="#0a0e27" opacity="0.5"/>
+  <text x="292" y="416" fill="#a5b4fc" font-family="monospace" font-size="12">c4d1e8b3</text>
+  <text x="440" y="416" fill="#94a3b8" font-family="monospace" font-size="12">usr_9012</text>
+  <text x="570" y="416" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Feb 17, 16:42</text>
+  <text x="700" y="416" fill="#94a3b8" font-family="monospace" font-size="12">8m 05s</text>
+  <text x="800" y="416" fill="#ef4444" font-family="monospace" font-size="12" font-weight="700">22.1%</text>
+  <rect x="920" y="402" width="70" height="22" rx="11" fill="#2e0a0a"/>
+  <text x="955" y="418" fill="#ef4444" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Elevated</text>
+  <rect x="1020" y="402" width="80" height="22" rx="11" fill="#2e0a0a"/>
+  <text x="1060" y="418" fill="#ef4444" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Declined</text>
+  <circle cx="1150" cy="412" r="8" fill="#f59e0b" opacity="0.2"/>
+  <text x="1150" y="416" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle" font-weight="700">!</text>
+
+  <!-- Row 4 -->
+  <rect x="272" y="434" width="900" height="48" fill="transparent"/>
+  <text x="292" y="464" fill="#a5b4fc" font-family="monospace" font-size="12">d9f3a6c7</text>
+  <text x="440" y="464" fill="#94a3b8" font-family="monospace" font-size="12">usr_3387</text>
+  <text x="570" y="464" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Feb 17, 14:18</text>
+  <text x="700" y="464" fill="#94a3b8" font-family="monospace" font-size="12">3m 47s</text>
+  <text x="800" y="464" fill="#22c55e" font-family="monospace" font-size="12" font-weight="700">6.9%</text>
+  <rect x="920" y="450" width="60" height="22" rx="11" fill="#0a2e1a"/>
+  <text x="950" y="466" fill="#22c55e" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Low</text>
+  <rect x="1020" y="450" width="80" height="22" rx="11" fill="#0a2e1a"/>
+  <text x="1060" y="466" fill="#22c55e" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Approved</text>
+  <text x="1150" y="464" fill="#334155" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">-</text>
+
+  <!-- Row 5 -->
+  <rect x="272" y="482" width="900" height="48" fill="#0a0e27" opacity="0.5"/>
+  <text x="292" y="512" fill="#a5b4fc" font-family="monospace" font-size="12">e2b8d4f1</text>
+  <text x="440" y="512" fill="#94a3b8" font-family="monospace" font-size="12">usr_5561</text>
+  <text x="570" y="512" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Feb 17, 11:30</text>
+  <text x="700" y="512" fill="#94a3b8" font-family="monospace" font-size="12">5m 12s</text>
+  <text x="800" y="512" fill="#f59e0b" font-family="monospace" font-size="12" font-weight="700">15.4%</text>
+  <rect x="920" y="498" width="80" height="22" rx="11" fill="#2e2a0a"/>
+  <text x="960" y="514" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Moderate</text>
+  <rect x="1020" y="498" width="80" height="22" rx="11" fill="#0a2e1a"/>
+  <text x="1060" y="514" fill="#22c55e" font-family="system-ui, sans-serif" font-size="11" font-weight="600" text-anchor="middle">Approved</text>
+  <text x="1150" y="512" fill="#334155" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">-</text>
+
+  <!-- Pagination -->
+  <text x="292" y="560" fill="#64748b" font-family="system-ui, sans-serif" font-size="12">Showing 1-25 of 1,247 sessions</text>
+  <g transform="translate(1050, 545)">
+    <rect x="0" y="0" width="30" height="26" rx="6" fill="#1a1f3d" stroke="#2a2f52" stroke-width="1"/>
+    <text x="15" y="18" fill="#64748b" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">&lt;</text>
+    <rect x="38" y="0" width="30" height="26" rx="6" fill="#6366f1"/>
+    <text x="53" y="18" fill="white" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">1</text>
+    <rect x="76" y="0" width="30" height="26" rx="6" fill="#1a1f3d" stroke="#2a2f52" stroke-width="1"/>
+    <text x="91" y="18" fill="#64748b" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">2</text>
+    <rect x="114" y="0" width="30" height="26" rx="6" fill="#1a1f3d" stroke="#2a2f52" stroke-width="1"/>
+    <text x="129" y="18" fill="#64748b" font-family="system-ui, sans-serif" font-size="12" text-anchor="middle">&gt;</text>
+  </g>
+</svg>

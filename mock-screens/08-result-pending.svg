@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 760" width="440" height="760">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#0a0e27"/>
+      <stop offset="100%" stop-color="#131838"/>
+    </linearGradient>
+    <linearGradient id="accentGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="440" height="760" fill="url(#bgGrad)" rx="20"/>
+
+  <!-- Pending circle -->
+  <g transform="translate(220, 200)" filter="url(#glow)">
+    <circle cx="0" cy="0" r="64" fill="none" stroke="#f59e0b" stroke-width="3" opacity="0.3"/>
+    <circle cx="0" cy="0" r="50" fill="#2e2a0a" stroke="#f59e0b" stroke-width="3"/>
+    <!-- Clock icon -->
+    <circle cx="0" cy="0" r="22" fill="none" stroke="#f59e0b" stroke-width="2.5"/>
+    <line x1="0" y1="-2" x2="0" y2="-14" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="0" y1="-2" x2="10" y2="4" stroke="#f59e0b" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Decision text -->
+  <text x="220" y="300" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="28" font-weight="800" text-anchor="middle">PENDING REVIEW</text>
+  <text x="220" y="330" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="14" text-anchor="middle">Your application needs additional review</text>
+
+  <!-- Profile card -->
+  <rect x="32" y="360" width="376" height="100" rx="16" fill="#1a1f3d" stroke="#2a2f52" stroke-width="1"/>
+  <text x="52" y="390" fill="#64748b" font-family="system-ui, sans-serif" font-size="11" font-weight="600" letter-spacing="1">YOUR MONEY PROFILE</text>
+  <text x="52" y="418" fill="white" font-family="system-ui, sans-serif" font-size="20" font-weight="700">Social Spender</text>
+  <text x="52" y="442" fill="#818cf8" font-family="system-ui, sans-serif" font-size="13">Generous, community-oriented, moderate risk</text>
+
+  <!-- Loan details card -->
+  <rect x="32" y="480" width="376" height="160" rx="16" fill="#1a1f3d" stroke="#2a2f52" stroke-width="1"/>
+  <text x="52" y="510" fill="#64748b" font-family="system-ui, sans-serif" font-size="11" font-weight="600" letter-spacing="1">PRELIMINARY TERMS</text>
+
+  <!-- Loan metrics -->
+  <g transform="translate(52, 530)">
+    <text x="0" y="0" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Max Amount</text>
+    <text x="0" y="22" fill="#f59e0b" font-family="monospace" font-size="22" font-weight="700">$25,000</text>
+  </g>
+  <g transform="translate(200, 530)">
+    <text x="0" y="0" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">Duration</text>
+    <text x="0" y="22" fill="white" font-family="monospace" font-size="22" font-weight="700">24 mo</text>
+  </g>
+  <g transform="translate(320, 530)">
+    <text x="0" y="0" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="12">APR</text>
+    <text x="0" y="22" fill="white" font-family="monospace" font-size="22" font-weight="700">14.0%</text>
+  </g>
+
+  <!-- Risk rating pill -->
+  <rect x="52" y="580" width="120" height="30" rx="15" fill="#2e2a0a" stroke="#f59e0b" stroke-width="1"/>
+  <text x="112" y="600" fill="#f59e0b" font-family="system-ui, sans-serif" font-size="12" font-weight="700" text-anchor="middle">MODERATE RISK</text>
+
+  <!-- PD Score -->
+  <text x="220" y="600" fill="#64748b" font-family="system-ui, sans-serif" font-size="12">PD Score: <tspan fill="#f59e0b" font-weight="700">12.8%</tspan></text>
+
+  <!-- Info text -->
+  <text x="220" y="660" fill="#64748b" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle">A loan officer will review your application</text>
+  <text x="220" y="680" fill="#64748b" font-family="system-ui, sans-serif" font-size="13" text-anchor="middle">within 1-2 business days.</text>
+
+  <!-- CTA button -->
+  <rect x="32" y="700" width="376" height="40" rx="12" fill="#1a1f3d" stroke="#2a2f52" stroke-width="1"/>
+  <text x="220" y="726" fill="#818cf8" font-family="system-ui, sans-serif" font-size="14" font-weight="600" text-anchor="middle">Close</text>
+</svg>
